@@ -22,7 +22,7 @@
   "author": "Mohamed Farouk",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/Medo3-coder/jobber-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
