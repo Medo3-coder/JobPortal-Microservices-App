@@ -125,6 +125,7 @@ Infrastructure-related configurations and files.
 - **Redis**: Using for caching.
 - **Docker Compose**: Setting up services locally.
 - **JWT**: Setting up access to microservices using JWT-based authentication.
+- **Cloudinary**: Managing and storing media assets in the cloud.
 
 ## Getting Started
 
