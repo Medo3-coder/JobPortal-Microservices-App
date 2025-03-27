@@ -81,6 +81,7 @@ export {
   ServerError,
   ErrnoException
 } from './error-handler';
-export {uploads , videoUpload} from './cloudinary-upload'
+export {uploads , videoUpload} from './cloudinary-upload';
+
 
 
