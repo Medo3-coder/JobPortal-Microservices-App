@@ -84,6 +84,13 @@ export {
 export { uploads, videoUpload } from './cloudinary-upload';
 export { verifyGatewayRequest } from './gateway-middleware';
 export { winstonLogger } from './logger';
+export {
+  firstLetterUppercase,
+  lowerCase,
+  toUpperCase,
+  isEmail,
+  isDataURL
+} from './helpers';
 
 
 
