@@ -13,8 +13,8 @@ export {
   IReduxLogout,
   IAuthResponse,
   IAuthUser,
-} from  './auth.interface'
-export {IBuyerDocument , IReduxBuyer } from './buyer.interface'
+} from './auth.interface'
+export { IBuyerDocument, IReduxBuyer } from './buyer.interface'
 export {
   IConversationDocument,
   IMessageDocument,
@@ -81,8 +81,10 @@ export {
   ServerError,
   ErrnoException
 } from './error-handler';
-export {uploads , videoUpload} from './cloudinary-upload';
+export { uploads, videoUpload } from './cloudinary-upload';
 export { verifyGatewayRequest } from './gateway-middleware';
+export { winstonLogger } from './logger';
+
 
 
 
