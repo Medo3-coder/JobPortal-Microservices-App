@@ -1,0 +1,36 @@
+# Ignore Docker Compose files
+docker-compose.yml
+Dockerfile*
+
+# Ignore log files
+*.log
+logs/
+tmp/ 
+temp/
+
+# Ignore database and cache volumes
+docker-volumes/cache/
+docker-volumes/data/
+docker-volumes/mysql/
+docker-volumes/postgres/
+docker-volumes/elasticsearch-data/
+
+# Ignore Kibana configuration if generated dynamically
+kibana.yml
+
+# Ignore IDE configuration files
+.vscode/
+.idea/
+
+# Ignore system files
+.DS_Store
+
+# Ignore Git files
+.git
+.gitignore
+
+# Ignore node modules (if using a Node.js environment in this project)
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
