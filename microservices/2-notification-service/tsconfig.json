@@ -18,6 +18,14 @@
     "forceConsistentCasingInFileNames": true,
     "pretty": true,
     "resolveJsonModule": true,
+    "plugins": [
+      { "transform": "typescript-transform-paths" },
+      { "transform": "typescript-transform-paths", "afterDeclarations": true },
+    ],
+    "baseUrl":"./src",
+    "paths": {
+      "@notifications/*": ["*"]
+    }
   },
   "include": ["src"],
   "exclude": ["node_modules"]
