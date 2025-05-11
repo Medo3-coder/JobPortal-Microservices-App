@@ -5,6 +5,7 @@ import { winstonLogger } from '@Medo3-coder/jobber-shared';
 import { config } from '@notifications/config';
 import { Logger } from 'winston';
 import { Application } from 'express';
+import { healthRoutes } from '@notifications/routes';
 
 
 
@@ -14,6 +15,8 @@ const log: Logger = winstonLogger(`${config.ELASTIC_SEARCH_URL}`, 'notificationS
 
 export function start(app: Application): void {
   startServer(app);
+  // http://localhost:4001/notification-routes
+  app.use('', healthRoutes())
   startQueues();
   startElasticSearch();
 }
