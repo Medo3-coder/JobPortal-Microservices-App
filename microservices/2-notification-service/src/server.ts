@@ -6,6 +6,7 @@ import { config } from '@notifications/config';
 import { Logger } from 'winston';
 import { Application } from 'express';
 import { healthRoutes } from '@notifications/routes';
+import { checkConnection } from '@notifications/elasticsearch';
 
 
 
@@ -27,7 +28,7 @@ async function startQueues(): Promise<void> {
 
 // initializes Elasticsearch (for logs/monitoring).
 function startElasticSearch(): void {
-
+   checkConnection();
 }
 
 
