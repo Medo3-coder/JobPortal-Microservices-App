@@ -7,6 +7,7 @@ import { Logger } from 'winston';
 import { Application } from 'express';
 import { healthRoutes } from '@notifications/routes';
 import { checkConnection } from '@notifications/elasticsearch';
+import { createConnection } from '@notifications/queues/connection';
 
 
 
@@ -23,7 +24,7 @@ export function start(app: Application): void {
 }
 
 async function startQueues(): Promise<void> {
-
+ await createConnection();
 }
 
 // initializes Elasticsearch (for logs/monitoring).
